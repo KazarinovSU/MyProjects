@@ -11,4 +11,4 @@
 # Пример работы программы
 
 Вот пример вывода в терминале:
-![Скриншот терминала](src\resources\images\calculator-terminal.png)
+![Скриншот терминала](src/resources/images/calculator-terminal.png)
