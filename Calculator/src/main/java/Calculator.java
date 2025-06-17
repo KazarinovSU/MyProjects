@@ -2,49 +2,12 @@ package main.java;
 
 import java.util.Scanner;
 
+import static main.java.ConsoleProtection.*;
+import static main.java.Operations.*;
+
 public class Calculator {
 
     public static Scanner SCANNER = new Scanner(System.in);
-
-    public static double add(double a, double b) {
-        return a + b;
-    }
-
-    public static double subtract(double a, double b) {
-        return a - b;
-    }
-
-    public static double multiply(double a, double b) {
-        return a * b;
-    }
-
-    public static double divide(double a, double b) {
-        return a / b;
-    }
-
-    public static double readDouble() {
-        while (true) {
-            try {
-                return SCANNER.nextDouble();
-            } catch (java.util.InputMismatchException e) {
-                System.out.println("ОШИБКА: введите корректное число!");
-                System.out.print("Введите число: ");
-                SCANNER.next();
-            }
-        }
-    }
-
-    public static int readInt() {
-        while (true) {
-            try {
-                return SCANNER.nextInt();
-            } catch (java.util.InputMismatchException e) {
-                System.out.println("ОШИБКА: Используй только цифры!");
-                System.out.print("Ваш выбор: ");
-                SCANNER.next();
-            }
-        }
-    }
 
     public static void main(String[] args) {
 
